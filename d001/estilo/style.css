@@ -1,0 +1,190 @@
+@charset "UTF-8";
+
+:root {
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cor0);
+}
+
+header {
+    background-image: linear-gradient(to bottom , var(--cor3), var(--cor5));
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    min-height: 150px;
+}
+
+header > h1 {
+    font-weight: normal;
+    font-size: 3.2em;
+    font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.336);
+}
+
+header > p {
+    font-size: 1.2em;
+    color: var(--cor0);
+    margin: auto;
+    padding-left:10px;
+    padding-right:10px;
+    max-width: 500px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.336);
+    margin-bottom: 30px;
+}
+
+nav {
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.315);
+    padding: 10px;
+    text-align: left;
+}
+
+nav > a {
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    border-radius: 4px;
+    transition-duration: 0.3s;
+}
+
+nav > a:hover {
+    background-color: var(--cor3);
+    color: var(--cor5);
+    padding: 15px;
+}
+
+main {
+    background-color: white;
+    max-width: 800px;
+    min-width: 280px;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+main > h1 {
+    font-weight: normal;
+    font-size: 2.2em;
+    font-family: idroid;
+    color: var(--cor5);
+}
+
+main > h2 {
+    font-weight: normal;
+    font-size: 1.7em;
+    font-family: idroid;
+    color: var(--cor4);
+    background-image: linear-gradient(to right, var(--cor1), rgba(255, 255, 255, 0));
+    padding: 2px 5px;
+}
+
+main p {
+    text-align: justify;
+    text-indent: 32px;
+    margin: 16px 0px;
+    line-height: 1.5em;
+}
+
+strong {
+    color: var(--cor5);
+}
+
+p a::after {
+    content: ' 🔗';
+}
+
+p a {
+    font-weight: bold;
+    color: var(--cor5);
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+img {
+    width: 100%;
+}
+
+img.pequena {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+div.conteiner {
+    max-width: 800px;
+    margin: 0px -20px 30px -20px;
+    background-color: var(--cor4);
+    padding: 20px;
+}
+
+div.video {
+    width: 100%;
+    padding-top: 56.25%;
+    margin: auto;
+    position: relative;
+}
+
+div iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+aside {
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.386);
+}
+
+aside ul {
+    list-style-position: inside;
+    list-style-type: '\2714  ';
+    columns: 2;
+}
+
+aside abbr {
+    text-decoration: none;
+}
+
+aside abbr:hover {
+    color: var(--cor5);
+}
+/*
+    Margem negativa é uma ótima maneira de negar um padding
+*/
+
+aside h3 {
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+    margin: -10px -10px 0px -10px;
+}
+
+footer {
+    color: white;
+    background-color: var(--cor4);
+    text-align: center;
+    padding: 10px;
+}
+
